@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+      <style>
+        .main-container {
+  display: flex; /* Make the container a flexbox for easy width distribution */
+  width: 98%; /* Set the width of the main container (adjust as needed) */
+  margin: 0 auto; /* Center the container horizontally */
+  height: auto;
+  /* Optional border for visualization */
+  padding: 10px; /* Optional padding for content */
+  margin-top: 10px;
+}
+
+.left-box {
+  width: 40%; /* Set the width of the left box */
+  background-color: #f0f0f0; /* Optional background color */
+  border: 1px solid #ccc; /* Optional border for visualization */
+  padding: 10px;
+  margin: 10px; /* Optional padding for content */
+}
+
+.right-box {
+  width: 60%; /* Set the width of the right box */
+  background-color: #e0e0e0; /* Optional background color */
+  border: 1px solid #ccc; /* Optional border for visualization */
+  padding: 10px; /* Optional padding for content */
+  margin: 10px;
+}
+      </style>
+    <title>OCR</title>
+  </head>
+  <body style=" background-color: aliceblue;">
+    <!-- <img src="https://source.unsplash.com/1700x300/?technology,dark background" class="img-fluid" alt="..." width="100%"> -->
+
+    <center>
+      <h1 style="margin-top: 10px; font-family: 'Courier New', Courier, monospace;"><b>Text/Image to Speech Translation</b></h1>
+    </center>
+   
+
+   <div class="main-container shadow-lg p-3 mb-5 bg-body rounded">
+   <div class="left-box">
+    <form action="#" method="post">
+
+      <div class="mb-1" style="height: 100px; ">
+        <center>
+          <label for="exampleFormControlTextarea1" class="form-label"><h4>
+            Enter any text
+          </h4></label>
+  
+        </center>
+        
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="height: 200px;" placeholder=" Enter Something you want to translate" name="text"></textarea>
+        
+      </div>
+      
+      <div class="mb-3" style="height: 50px;  margin-top: 15px; padding-top: 50px;">
+          <!-- <label for="exampleFormControlTextarea1" class="form-label">Enter Something you want to translate</label> -->
+          <div class="" style="padding-top: 100px;">
+
+            <center><h2 style="margin-bottom: 20px;">Or</h2></center>
+              <center>
+  
+             
+              <label for="formFile" class="form-label"><h4>
+                  Upload pdf/images only !
+              </h4></label>
+          </center>
+              <input class="form-control" type="file" id="formFile" name="file">
+            </div>
+            <center>
+              <div class="col-12 pb-4">
+                <button type="submit" class="btn btn-primary mt-5" style="width: 40%;">Submit</button>
+              </div>
+
+            </center>
+            
+          
+      </div>
+
+
+    </form>
+    
+
+   </div>
+   <div class="right-box" >
+    <center>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"><h4>Recognised text</h4></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="height: 300px;">{{text}}</textarea>
+          </div>
+
+          <h4 style="padding-top: 120px;">Audio File</h2>
+          <audio src="./static/output.mp3" controls></audio>
+    </center>
+    
+   </div>
+
+   
+  </div>
+  
+  </div>
+ 
+   
+    
+   </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

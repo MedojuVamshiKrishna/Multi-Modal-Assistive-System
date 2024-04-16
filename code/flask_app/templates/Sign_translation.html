@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+      <style>
+        .main-container {
+  display: flex; /* Make the container a flexbox for easy width distribution */
+  width: 80%; /* Set the width of the main container (adjust as needed) */
+  margin: 0 auto; /* Center the container horizontally */
+  /* Optional border for visualization */
+  padding: 10px; /* Optional padding for content */
+  margin-top: 120px;
+}
+
+.left-box {
+  width: 40%; /* Set the width of the left box */
+  background-color: #f0f0f0; /* Optional background color */
+  border: 1px solid #ccc; /* Optional border for visualization */
+  padding: 10px;
+  margin: 10px; /* Optional padding for content */
+}
+
+.right-box {
+  width: 60%; /* Set the width of the right box */
+  background-color: #e0e0e0; /* Optional background color */
+  border: 1px solid #ccc; /* Optional border for visualization */
+  padding: 10px; /* Optional padding for content */
+  margin: 10px;
+}
+      </style>
+    <title>Text to Sign</title>
+  </head>
+  <body style=" background-color: aliceblue;">
+    <!-- <img src="https://source.unsplash.com/1700x300/?technology,dark background" class="img-fluid" alt="..." width="100%"> -->
+
+    <center>
+      <h1 style="margin-top: 30px; font-family: 'Courier New', Courier, monospace;"><b>Text to Sign Language Translation</b></h1>
+    </center>
+   
+
+   <div class="main-container shadow-lg p-3 mb-5 bg-body rounded">
+   <div class="left-box">
+    <form action="#" method="post">
+      <div class="mb-3" style="height: 300px; margin-top: 45px;">
+        <!-- <label for="exampleFormControlTextarea1" class="form-label">Enter Something you want to translate</label> -->
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="height: 200px;" placeholder=" Enter Something you want to translate" name="text"></textarea>
+        
+      </div>
+      <center>
+        <div class="col-12 pb-4">
+          <button type="submit" class="btn btn-primary">Translate</button>
+        </div>
+
+      </center>
+      
+
+    </form>
+    
+   </div>
+   <div class="right-box" >
+    <center>
+      <video src="/static/output.webm" controls width="70%" height="300px" style="margin-top: 30px;"></video>
+
+    </center>
+    
+   </div>
+
+   
+  </div>
+  
+  </div>
+ 
+   
+    
+   </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
